@@ -11,6 +11,7 @@ The application is built using the **QT Framework** and includes an **SQLite** d
 Unit tests are written using **QT Test** and **Google Test**.
 
 ---
+![App Demo](demo.gif)
 
 ## Target OS
 
