@@ -20,7 +20,6 @@ using ::testing::Throw;
 
 std::string googleHostname = "google.com";
 std::string googleIPV4 = "142.250.189.238";
-std::string googleIPV6 = "2607:f8b0:4005:80e::200e"; //TODO: Write a test
 models::Geolocation googleGeolocation = {40.7128, -74.0060};
 
 class Tests : public QObject
