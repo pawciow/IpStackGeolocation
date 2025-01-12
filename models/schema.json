@@ -1,0 +1,93 @@
+{
+    "type": "object",
+    "properties": {
+        "ip": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "continent_code": {
+            "type": "string"
+        },
+        "continent_name": {
+            "type": "string"
+        },
+        "country_code": {
+            "type": "string"
+        },
+        "country_name": {
+            "type": "string"
+        },
+        "region_code": {
+            "type": "string"
+        },
+        "region_name": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        },
+        "zip": {
+            "type": "string"
+        },
+        "latitude": {
+            "type": "number"
+        },
+        "longitude": {
+            "type": "number"
+        },
+        "ip_routing_type": {
+            "type": "string"
+        },
+        "connection_type": {
+            "type": "string"
+        },
+        "location": {
+            "type": "object",
+            "properties": {
+                "geoname_id": {
+                    "type": "integer"
+                },
+                "capital": {
+                    "type": "string"
+                },
+                "languages": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "native": {
+                                "type": "string"
+                            }
+                        },
+                        "required": ["code", "name", "native"]
+                    }
+                },
+                "country_flag": {
+                    "type": "string"
+                },
+                "country_flag_emoji": {
+                    "type": "string"
+                },
+                "country_flag_emoji_unicode": {
+                    "type": "string"
+                },
+                "calling_code": {
+                    "type": "string"
+                },
+                "is_eu": {
+                    "type": "boolean"
+                }
+            },
+            "required": ["geoname_id", "capital", "languages", "country_flag", "country_flag_emoji", "country_flag_emoji_unicode", "calling_code", "is_eu"]
+        }
+    },
+    "required": ["ip", "type", "continent_code", "continent_name", "country_code", "country_name", "region_code", "region_name", "city", "zip", "latitude", "longitude", "ip_routing_type", "connection_type", "location"]
+}
